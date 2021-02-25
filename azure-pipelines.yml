@@ -65,7 +65,7 @@ steps:
   inputs:
     command: custom
     custom: tool
-    arguments: 'run reportgenerator -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/*/coverage.cobertura.xml -targetdir:./CodeCoverage -reporttypes:HtmlInline_AzurePipelines
+    arguments: 'run reportgenerator -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/**/coverage.cobertura.xml -targetdir:./CodeCoverage -reporttypes:HtmlInline_AzurePipelines
 
 - task: PublishCodeCoverageResults@1
   displayName: 'Publish code coverage report'
